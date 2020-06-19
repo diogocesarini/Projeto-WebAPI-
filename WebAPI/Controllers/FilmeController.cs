@@ -77,7 +77,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("{idFilme}")]
+        [Route("Delete/{idFilme}")]
         public async Task<ActionResult<Filme>> Delete([FromServices] DataContext context, int idFilme)
         {
             try

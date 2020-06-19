@@ -107,7 +107,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("{idLocacao}")]
+        [Route("devolucao/{idLocacao}")]
         public async Task<ActionResult<Locacoes>> Post([FromServices] DataContext context, int idLocacao)
         {
             try
